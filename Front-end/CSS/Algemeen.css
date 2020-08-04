@@ -1,0 +1,118 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Baskerville Old Face", sans-serif;
+}
+
+input[type=submit], input[type=reset], button {
+    cursor: pointer;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 20px 0 20px 0;
+}
+
+.div1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div1 a {
+    padding: 0 20px 0 20px;
+}
+
+header a {
+    font: 20px "Baskerville Old Face";
+    text-decoration: none;
+    color: black;
+}
+
+.section1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Footer */
+footer{
+    font: medium "Eras Medium ITC";
+    background-image: url("../Assets/Afbeeldingen/Foto's/Footer.png");
+    padding: 10px 0 30px 0;
+    width: 100%;
+    height: 140px;
+    clear: both;
+    color: black;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: 50px 0 0 50px;
+    list-style-type: none;
+    float: left;
+}
+.right{
+    float: right;
+    margin: 25px 25px 0 0;
+}
+footer p{
+    margin: 0 0 0 20px;
+    padding: 0;
+    font: 20px "Baskerville Old Face";
+}
+.right>p:nth-child(1){
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+}
+.footer_Info{
+    float: left;
+    margin-left: 30px;
+    margin-right: 150px;
+}
+#footer_contact{
+    margin-left: 50px;
+}
+
+footer img {
+    display: none;
+}
+
+/* Header & Footer Media Queries */
+@media screen and (min-width: 601px) {
+    footer img {
+        display: initial;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 931px) {
+    .section1 {
+        flex-direction: row;
+    }
+
+    .right {
+        display: initial;
+    }
+}

@@ -1,0 +1,56 @@
+#product-geschiedenis {
+    width: 100%;
+    margin: 0 auto 60px auto;
+}
+
+#product-geschiedenis p {
+    font-size: 20px;
+}
+
+#geen-bestelgeschiedenis {
+    text-align: center;
+}
+
+.collapsible {
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    font: 20px "Baskerville Old Face";
+}
+
+button[id^="order"] {
+    font: 20px "Baskerville Old Face";
+    border-radius: 4px;
+    width: 90px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+@media screen and (min-width: 414px) {
+    button[id^="order"] {
+        width: initial;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    #product-geschiedenis {
+        width: 1000px;
+    }
+}

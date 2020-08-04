@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product toevoegen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/Algemeen.css">
+    <link rel="stylesheet" href="../../CSS/ProductWijzigen.css">
+    <link rel="stylesheet" href="../../CSS/Pagecontainer.css">
+</head>
+<body>
+<div id="page-container">
+    <div id="content-wrap">
+        <header>
+            <section class="section1">
+                <a id="homepageknop" href="../Homepage/Homepage.html"><img src="../../Assets/Logo's/logo_wit.jpg" width="150px" height="100px" alt="Homeknop" id="Homeknop"></a>
+                <a href="../Producten/Producten.html">Producten</a>
+                <a href="../Over_Ons/OverOns.html">Over ons</a>
+                <a href="../Over_Ons/Medewekers.html">Medewerkers</a>
+                <a href="../Over_Ons/Contact.html">Contact</a>
+                <div class="div1">
+                    <a href="../Gebruiker/GebruikerInloggen.html" id="inloggen" class="a_nav"><img src="../../Assets/Logo's/Gebruiker_inloggen.png" alt="inloggen"></a>
+                    <a href="../Gebruiker/Profielpagina.html" id="profielinfo" class="a_nav"><img src="../../Assets/Logo's/Gebruiker_inloggen.png" alt="profielgegevens"></a>
+                    <a href="../Gebruiker/GebruikerAanmaken.html" id="aanmaken" class="a_nav"><img src="../../Assets/Logo's/Gebruiker_toevoegen.png" alt="nieuwe gebruiker"></a>
+                    <a href="../Gebruiker/GebruikerInloggen.html" id="uitloggen" class="a_nav"><img src="../../Assets/Logo's/Gebruiker_uitloggen.png" alt="uitloggen" width="30" height="30"></a>
+                    <a href="../Gebruiker/Winkelmandje.html" class="a_nav"><img src="../../Assets/Logo's/Shopping_cart.png" alt="winkelmandje"></a>
+                </div>
+                <input class="Zoekbalk" type="text" placeholder="Zoeken..." name="search">
+            </section>
+        </header>
+        <h2>Product toevoegen</h2>
+        <p id="error"></p>
+        <form>
+            <p id="name-error"></p>
+            <label for="productnaam" class="kol1">Productnaam</label>
+            <input type="text" id="productnaam" class="kol2"/>
+            <p id="price-error"></p>
+            <label for="productprijs" class="kol1">Prijs</label>
+            <input type="text" id="productprijs" class="kol2"/>
+            <p id="description-error"></p>
+            <label for="productomschrijving" class="kol1">Omschrijving</label>
+            <textarea id="productomschrijving" class="kol2"></textarea>
+            <p id="image-error"></p>
+            <label for="productafbeelding" class="kol1">Afbeelding</label>
+            <input type="text" id="productafbeelding" class="kol2">
+            <label for="productcategorie" class="kol1">Categorie</label>
+            <select id="productcategorie">
+                <option value="Bedden">Bedden</option>
+                <option value="Bureaus">Bureaus</option>
+                <option value="Bureaustoelen">Bureaustoelen</option>
+                <option value="Combos">Combos</option>
+                <option value="Kasten">Kasten</option>
+                <option value="Nachtkastjes">Nachtkastjes</option>
+                <option value="Salontafels">Salontafels</option>
+                <option value="Stoelen">Stoelen</option>
+                <option value="Tafels">Tafels</option>
+                <option value="TV-meubels">TV-meubels</option>
+                <option value="Zetels">Zetels</option>
+            </select>
+            <button id="wijzigen">Toevoegen</button>
+        </form>
+    </div>
+    <footer>
+        <img src="../../Assets/Logo's/Bancontact.png" alt="Bancontact" id="Bancontact">
+        <img src="../../Assets/Logo's/iDeal.png" alt="iDeal" id="iDeal">
+        <img src="../../Assets/Logo's/Maestro.png" alt="Maestro" id="Maestro">
+        <img src="../../Assets/Logo's/Mastercard.png" alt="Mastercard" id="Mastercard">
+        <img src="../../Assets/Logo's/PayPal.png" alt="PayPal" id="PayPal">
+        <img src="../../Assets/Logo's/Visa.png" alt="Visa" id="Visa">
+        <div class="right">
+            <p class="p">Contact:</p>
+            <p class="p">Corda Campus</p>
+            <p class="p">Kempische Steenweg 293</p>
+            <p class="p">3500 HASSELT</p>
+            <p class="p">België</p>
+        </div>
+    </footer>
+</div>
+<script src="../../JAVASCRIPT/Algemeen/HeaderIngelogd.js"></script>
+<script src="../../JAVASCRIPT/Producten/ProductToevoegen.js"></script>
+</body>
+</html>

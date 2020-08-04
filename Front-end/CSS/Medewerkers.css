@@ -1,0 +1,36 @@
+.tabel2 {
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tabel2 div {
+    margin: 10px;
+    display: grid;
+}
+
+.tabel2 img {
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 20px;
+    margin: 0;
+}
+
+u {
+    padding-bottom: 10px;
+    border-bottom: 3px gray solid;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}

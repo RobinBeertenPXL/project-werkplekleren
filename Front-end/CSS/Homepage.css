@@ -1,0 +1,41 @@
+h2 {
+    margin: 0;
+}
+
+.section2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.div2 {
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.div2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.w3-content {
+    display: none;
+}
+
+@media screen and (min-width: 601px) {
+    .w3-content {
+        display: initial;
+    }
+}
+
+@media screen and (min-width: 931px) {
+    .div2 {
+        width: 33%;
+    }
+
+    .section2 {
+        flex-direction: row;
+    }
+}

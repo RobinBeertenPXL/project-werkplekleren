@@ -1,0 +1,126 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+form p {
+    margin: 0;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-gap: 5px;
+    width: 100%;
+    margin: 0 auto 50px auto;
+    font-size: 20px;
+}
+
+form input {
+    border-radius: 4px;
+}
+
+form input, form label {
+    font: 20px "Baskerville Old Face", sans-serif;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.kol1 {
+    grid-column: 1;
+}
+
+.kol2 {
+    grid-column: 2;
+}
+
+#buttons {
+    display: grid;
+    grid-column: span 2;
+    grid-gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#verzenden {
+    grid-column: span 5;
+    font: 20px "Baskerville Old Face", sans-serif;
+    border-radius: 4px;
+}
+
+#leegmaken {
+    grid-column: span 5;
+    font: 20px "Baskerville Old Face", sans-serif;
+    border-radius: 4px;
+}
+
+button {
+    grid-column: span 5;
+    font: 20px "Baskerville Old Face", sans-serif;
+    border-radius: 4px;
+}
+
+#error-container {
+    text-align: center;
+}
+
+#error {
+    color: red;
+    font-size: 25px;
+    text-align: center;
+}
+
+#firstname-error {
+    color: red;
+    grid-column: span 2;
+    grid-row: 1;
+}
+
+#lastname-error {
+    color: red;
+    grid-column: span 2;
+    grid-row: 3;
+}
+
+#date-error {
+    color: red;
+    grid-column: span 2;
+    grid-row: 5;
+}
+
+#email-error {
+    color: red;
+    grid-column: span 2;
+    grid-row: 7;
+}
+
+#password-error {
+    color: red;
+    grid-column: span 2;
+    grid-row: 9;
+}
+
+@media screen and (min-width: 501px) {
+    form {
+        width: 500px;
+        grid-template-columns: 30% 1fr;
+    }
+
+
+    #verzenden {
+        grid-column: 2;
+    }
+
+    #leegmaken {
+        grid-column: 4;
+    }
+}
+
+@media screen and (min-width: 931px) {
+    form {
+        margin: 0 auto;
+    }
+}

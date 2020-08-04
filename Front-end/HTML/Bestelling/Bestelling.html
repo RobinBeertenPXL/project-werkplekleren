@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bevestiging bestelling</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/Algemeen.css">
+    <link rel="stylesheet" href="../../CSS/Bestelling.css">
+    <link rel="stylesheet" href="../../CSS/Pagecontainer.css">
+</head>
+<body>
+<div id="page-container">
+    <div id="content-wrap">
+        <header>
+            <section class="section1">
+                <a id="homepageknop" href="../Homepage/Homepage.html"><img src="../../Assets/Logo's/logo_wit.jpg" width="150px" height="100px" alt="Homeknop" id="Homeknop"></a>
+                <a href="../Producten/Producten.html">Producten</a>
+                <a href="../Over_Ons/OverOns.html">Over ons</a>
+                <a href="../Over_Ons/Medewekers.html">Medewerkers</a>
+                <a href="../Over_Ons/Contact.html">Contact</a>
+                <div class="div1">
+                    <a href="../Gebruiker/GebruikerInloggen.html" id="inloggen" class="a_nav"><img src="../../Assets/Logo's/Gebruiker_inloggen.png" alt="inloggen"></a>
+                    <a href="../Gebruiker/Profielpagina.html" id="profielinfo" class="a_nav"><img src="../../Assets/Logo's/Gebruiker_inloggen.png" alt="profielgegevens"></a>
+                    <a href="../Gebruiker/GebruikerAanmaken.html" id="aanmaken" class="a_nav"><img src="../../Assets/Logo's/Gebruiker_toevoegen.png" alt="nieuwe gebruiker"></a>
+                    <a href="../Gebruiker/GebruikerInloggen.html" id="uitloggen" class="a_nav"><img src="../../Assets/Logo's/Gebruiker_uitloggen.png" alt="uitloggen" width="30" height="30"></a>
+                    <a href="../Gebruiker/Winkelmandje.html" class="a_nav"><img src="../../Assets/Logo's/Shopping_cart.png" alt="winkelmandje"></a>
+                </div>
+                <input type="text" placeholder="Zoeken..." name="search">
+            </section>
+        </header>
+        <main>
+            <section id="adresgegevens">
+                <h1>1. Adresgegevens</h1>
+                <form id="gebruikerinfo">
+                    <label for="voornaam" class="kol1">Voornaam <span class="red">*</span></label>
+                    <label for="naam" class="kol2">Achternaam <span class="red">*</span></label>
+                    <input type="text" id="voornaam" class="kol1" disabled>
+                    <input type="text" id="naam" class="kol2" disabled>
+                    <label for="bedrijf" class="span2">Bedrijfsnaam</label>
+                    <input type="text" id="bedrijf" class="span2">
+                    <label for="email" class="span2">E-mailadres <span class="red">*</span></label>
+                    <input type="email" id="email" class="span2" disabled>
+                    <label for="land" class="span2">Land <span class="red">*</span></label>
+                    <input type="text" id="land" class="span2" value="België" disabled>
+                    <label for="postcode" class="span2">Postcode <span class="red">*</span></label>
+                    <input type="text" id="postcode" class="span2">
+                    <label for="straat" class="span2">Straatnaam <span class="red">*</span></label>
+                    <input type="text" id="straat" class="span2">
+                    <label for="nummer" class="span2">Huisnummer <span class="red">*</span></label>
+                    <input type="text" id="nummer" class="span2">
+                    <label for="plaats" class="kol1">Plaats <span class="red">*</span></label>
+                    <input type="text" id="plaats" class="kol1">
+                    <label for="telefoon" class="span2">Telefoonnummer <span class="red">*</span></label>
+                    <input type="text" id="telefoon" class="span2">
+                </form>
+            </section>
+            <section id="bezorgopties">
+                <div>
+                    <article>
+                        <h1>2. Bezorgopties</h1>
+                        <form name="bezorgopties">
+                            <div><input type="radio" name="bezorging" value="0" id="afhalen" checked/><label for="afhalen">Afhalen (gratis)</label></div>
+                            <div><input type="radio" name="bezorging" value="25" id="leveren"/><label for="leveren">Aan huis leveren (+ € 25)</label></div>
+                            <div><input type="radio" name="bezorging" value="40" id="leveren-installeren"/><label for="leveren-installeren">Aan huis leveren en installeren (+ € 40)</label></div>
+                        </form>
+                    </article>
+                    <article>
+                        <h1>3. Betaalopties</h1>
+                        <div><input type="radio" name="betaling" value="Bancontact" id="optie1"/><label for="bancontact">Bancontact</label></div>
+                        <div><input type="radio" name="betaling" value="iDeal" id="optie2"/><label for="ideal">iDeal</label></div>
+                        <div><input type="radio" name="betaling" value="Maestro" id="optie3"/><label for="maestro">Maestro</label></div>
+                        <div><input type="radio" name="betaling" value="MasterCard" id="optie4"/><label for="mastercard">MasterCard</label></div>
+                        <div><input type="radio" name="betaling" value="PayPal" id="optie5"/><label for="paypal">PayPal</label></div>
+                        <div><input type="radio" name="betaling" value="Visa" id="optie6"/><label for="visa">Visa</label></div>
+                    </article>
+                </div>
+            </section>
+            <section id="controle-bestelling">
+                <h1>4. Controleer je bestelling</h1>
+                <div id="winkelmandje">
+                    <article>
+                        <p class="kol1 bold">Producten</p>
+                        <p class="kol2 bold">Aantal</p>
+                        <p class="kol3 bold">Totaal</p>
+                    </article>
+                    <hr>
+                    <div id="producten">
+
+                    </div>
+                    <article>
+                        <p class="kol2 bold">Subtotaal</p>
+                        <p id="totale-productprijs" class="kol3"></p>
+                    </article>
+                    <hr>
+                    <article>
+                        <p class="kol2 bold">Verzendkosten</p>
+                        <p id="verzendkosten" class="kol3"></p>
+                    </article>
+                    <hr>
+                    <article>
+                        <p class="kol2 bold">Eindtotaal</p>
+                        <p id="eindtotaal" class="kol3"></p>
+                    </article>
+                </div>
+                <div id="knoppen">
+                    <input type="submit" value="Bestellen" id="bestellen" class="kol1">
+                    <input type="submit" value="Annuleren" id="annuleren" class="kol2">
+                </div>
+                <p id="bevestiging-bestelling"></p>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <img src="../../Assets/Logo's/Bancontact.png" alt="Bancontact" id="Bancontact">
+        <img src="../../Assets/Logo's/iDeal.png" alt="iDeal" id="iDeal">
+        <img src="../../Assets/Logo's/Maestro.png" alt="Maestro" id="Maestro">
+        <img src="../../Assets/Logo's/Mastercard.png" alt="Mastercard" id="Mastercard">
+        <img src="../../Assets/Logo's/PayPal.png" alt="PayPal" id="PayPal">
+        <img src="../../Assets/Logo's/Visa.png" alt="Visa" id="Visa">
+        <div class="right">
+            <p class="p">Contact:</p>
+            <p class="p">Corda Campus</p>
+            <p class="p">Kempische Steenweg 293</p>
+            <p class="p">3500 HASSELT</p>
+            <p class="p">België</p>
+        </div>
+    </footer>
+</div>
+<script src="../../JAVASCRIPT/Algemeen/HeaderIngelogd.js"></script>
+<script src="../../JAVASCRIPT/Bestelling/Bestelling.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+C:\project\PXL Project Team05\PXL Project team 05\PXLDataClass\bin\Debug\PXLDataClass.dll
+C:\project\PXL Project Team05\PXL Project team 05\PXLDataClass\bin\Debug\PXLDataClass.pdb
+C:\project\PXL Project Team05\PXL Project team 05\PXLDataClass\bin\Debug\Newtonsoft.Json.dll
+C:\project\PXL Project Team05\PXL Project team 05\PXLDataClass\bin\Debug\System.Net.Http.Formatting.dll
+C:\project\PXL Project Team05\PXL Project team 05\PXLDataClass\bin\Debug\System.Web.Cors.dll
+C:\project\PXL Project Team05\PXL Project team 05\PXLDataClass\bin\Debug\System.Web.Http.Cors.dll
+C:\project\PXL Project Team05\PXL Project team 05\PXLDataClass\bin\Debug\System.Web.Http.dll
+C:\project\PXL Project Team05\PXL Project team 05\PXLDataClass\bin\Debug\Newtonsoft.Json.xml
+C:\project\PXL Project Team05\PXL Project team 05\PXLDataClass\bin\Debug\System.Net.Http.Formatting.xml
+C:\project\PXL Project Team05\PXL Project team 05\PXLDataClass\bin\Debug\System.Web.Http.xml
+C:\project\PXL Project Team05\PXL Project team 05\PXLDataClass\bin\Debug\System.Web.Http.Cors.xml
+C:\project\PXL Project Team05\PXL Project team 05\PXLDataClass\obj\Debug\PXLData.csproj.CoreCompileInputs.cache
+C:\project\PXL Project Team05\PXL Project team 05\PXLDataClass\obj\Debug\PXLData.csproj.CopyComplete
+C:\project\PXL Project Team05\PXL Project team 05\PXLDataClass\obj\Debug\PXLDataClass.dll
+C:\project\PXL Project Team05\PXL Project team 05\PXLDataClass\obj\Debug\PXLDataClass.pdb
+C:\project\PXL Project Team05\PXL Project team 05\PXLDataClass\obj\Debug\PXLData.csprojAssemblyReference.cache

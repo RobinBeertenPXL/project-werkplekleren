@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gebruiker aanmaken</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/Algemeen.css">
+    <link rel="stylesheet" href="../../CSS/GebruikerAanmaken.css">
+    <link rel="stylesheet" href="../../CSS/Pagecontainer.css">
+</head>
+<body>
+<div id="page-container">
+    <div id="content-wrap">
+        <header>
+            <section class="section1">
+                <a id="homepageknop" href="../Homepage/Homepage.html"><img src="../../Assets/Logo's/logo_wit.jpg" width="150px" height="100px" alt="Homeknop" id="Homeknop"></a>
+                <a href="../Producten/Producten.html">Producten</a>
+                <a href="../Over_Ons/OverOns.html">Over ons</a>
+                <a href="../Over_Ons/Medewekers.html">Medewerkers</a>
+                <a href="../Over_Ons/Contact.html">Contact</a>
+                <div class="div1">
+                    <a href="../Gebruiker/GebruikerInloggen.html" id="inloggen" class="a_nav"><img src="../../Assets/Logo's/Gebruiker_inloggen.png" alt="inloggen"></a>
+                    <a href="../Gebruiker/Profielpagina.html" id="profielinfo" class="a_nav"><img src="../../Assets/Logo's/Gebruiker_inloggen.png" alt="profielgegevens"></a>
+                    <a href="../Gebruiker/GebruikerAanmaken.html" id="aanmaken" class="a_nav"><img src="../../Assets/Logo's/Gebruiker_toevoegen.png" alt="nieuwe gebruiker"></a>
+                    <a href="../Gebruiker/GebruikerInloggen.html" id="uitloggen" class="a_nav"><img src="../../Assets/Logo's/Gebruiker_uitloggen.png" alt="uitloggen" width="30" height="30"></a>
+                    <a href="../Gebruiker/Winkelmandje.html" class="a_nav"><img src="../../Assets/Logo's/Shopping_cart.png" alt="winkelmandje"></a>
+                </div>
+                <input class="Zoekbalk" type="text" placeholder="Zoeken..." name="search">
+            </section>
+        </header>
+        <h2>Account aanmaken</h2>
+        <p id="error"></p>
+        <form>
+            <p id="firstname-error"></p>
+            <label for="voorn" class="kol1">Voornaam</label>
+            <input type="text" id="voorn" class="kol2">
+            <p id="lastname-error"></p>
+            <label for="naam" class="kol1">Naam</label>
+            <input type="text" id="naam" class="kol2">
+            <p id="date-error"></p>
+            <label for="datum" class="kol1">Geboortedatum</label>
+            <input type="date" id="datum" class="kol2">
+            <p id="email-error"></p>
+            <label for="email" class="kol1">E-mailadres</label>
+            <input type="email" id="email" class="kol2">
+            <p id="password-error"></p>
+            <label for="paswoord" class="kol1">Paswoord</label>
+            <input type="password" id="paswoord" class="kol2">
+            <div id="buttons">
+                <input type="submit" id="verzenden" value="Account aanmaken">
+                <input type="reset" id="leegmaken" value="Resetten">
+                <button><a href="GebruikerInloggen.html">Heeft u reeds een account?</a></button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <img src="../../Assets/Logo's/Bancontact.png" alt="Bancontact" id="Bancontact">
+        <img src="../../Assets/Logo's/iDeal.png" alt="iDeal" id="iDeal">
+        <img src="../../Assets/Logo's/Maestro.png" alt="Maestro" id="Maestro">
+        <img src="../../Assets/Logo's/Mastercard.png" alt="Mastercard" id="Mastercard">
+        <img src="../../Assets/Logo's/PayPal.png" alt="PayPal" id="PayPal">
+        <img src="../../Assets/Logo's/Visa.png" alt="Visa" id="Visa">
+        <div class="right">
+            <p class="p">Contact:</p>
+            <p class="p">Corda Campus</p>
+            <p class="p">Kempische Steenweg 293</p>
+            <p class="p">3500 HASSELT</p>
+            <p class="p">België</p>
+        </div>
+    </footer>
+</div>
+<script src="../../JAVASCRIPT/Algemeen/HeaderIngelogd.js"></script>
+<script src="../../JAVASCRIPT/Gebruiker/GebruikerAanmaken.js"></script>
+</body>
+</html>

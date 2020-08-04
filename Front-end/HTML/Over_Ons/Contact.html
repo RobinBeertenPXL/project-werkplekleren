@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contactinfo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/Algemeen.css">
+    <link rel="stylesheet" href="../../CSS/Contact.css">
+    <link rel="stylesheet" href="../../CSS/Pagecontainer.css">
+</head>
+<body>
+<div id="page-container">
+    <div id="content-wrap">
+        <header>
+            <section class="section1">
+                <a id="homepageknop" href="../Homepage/Homepage.html"><img src="../../Assets/Logo's/logo_wit.jpg" width="150px" height="100px" alt="Homeknop" id="Homeknop"></a>
+                <a href="../Producten/Producten.html">Producten</a>
+                <a href="OverOns.html">Over ons</a>
+                <a href="../Over_Ons/Medewekers.html">Medewerkers</a>
+                <a href="../Over_Ons/Contact.html">Contact</a>
+                <div class="div1">
+                    <a href="../Gebruiker/GebruikerInloggen.html" id="inloggen" class="a_nav"><img src="../../Assets/Logo's/Gebruiker_inloggen.png" alt="inloggen"></a>
+                    <a href="../Gebruiker/Profielpagina.html" id="profielinfo" class="a_nav"><img src="../../Assets/Logo's/Gebruiker_inloggen.png" alt="profielgegevens"></a>
+                    <a href="../Gebruiker/GebruikerAanmaken.html" id="aanmaken" class="a_nav"><img src="../../Assets/Logo's/Gebruiker_toevoegen.png" alt="nieuwe gebruiker"></a>
+                    <a href="../Gebruiker/GebruikerInloggen.html" id="uitloggen" class="a_nav"><img src="../../Assets/Logo's/Gebruiker_uitloggen.png" alt="uitloggen" width="30" height="30"></a>
+                    <a href="../Gebruiker/Winkelmandje.html" class="a_nav"><img src="../../Assets/Logo's/Shopping_cart.png" alt="winkelmandje"></a>
+                </div>
+                <input class="Zoekbalk" type="text" placeholder="Zoeken..." name="search">
+            </section>
+        </header>
+        <div class="KaartjeEnText">
+            <div>
+                <div class="ContactInfo">
+                    <p class="p">Contact:</p>
+                    <p class="p">Corda Campus</p>
+                    <p class="p">Kempische Steenweg 293</p>
+                    <p class="p">3500 HASSELT</p>
+                    <p class="p">België</p>
+                    <p>Telefoonnummer:</p>
+                    <p>013/14.78.87</p>
+                    <p>Heeft u vragen? Gelieve dit formulier invullen en verzenden.</p>
+                </div>
+                <div class="container2">
+                    <form action="mailto:Info.RoomyWebshop@gmail.com" method="post" enctype="text/plain">
+                        <div class="row">
+                            <div class="col-100">
+                                <p id="mail-verstuurd"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="onderwerp">Onderwerp</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" class="naam" id="onderwerp" name="firstname" placeholder="Vraag of suggestie...">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="ontvanger">Ontvanger</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="ontvanger" class="naam" name="lastname" value="Info.RoomyWebshop@gmail.com" readonly>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="mail-body">Vraag/Info</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="mail-body" name="subject" placeholder="Begin hier te schrijven..." style="height:50px"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input type="submit" value="Verzenden" id="send-email">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="350" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=Kempische%20Steenweg%20293%2C%203500%20Hasselt&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe><a href="https://www.enable-javascript.net/blog/divi-discount/"></a>
+                </div><style>.mapouter{position:relative;text-align:right;height:350px;width:350px;}.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:350px;}</style>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="../../Assets/Logo's/Bancontact.png" alt="Bancontact" id="Bancontact">
+        <img src="../../Assets/Logo's/iDeal.png" alt="iDeal" id="iDeal">
+        <img src="../../Assets/Logo's/Maestro.png" alt="Maestro" id="Maestro">
+        <img src="../../Assets/Logo's/Mastercard.png" alt="Mastercard" id="Mastercard">
+        <img src="../../Assets/Logo's/PayPal.png" alt="PayPal" id="PayPal">
+        <img src="../../Assets/Logo's/Visa.png" alt="Visa" id="Visa">
+        <div class="right">
+            <p class="p">Contact:</p>
+            <p class="p">Corda Campus</p>
+            <p class="p">Kempische Steenweg 293</p>
+            <p class="p">3500 HASSELT</p>
+            <p class="p">België</p>
+        </div>
+    </footer>
+</div>
+<script src="../../JAVASCRIPT/Algemeen/HeaderIngelogd.js"></script>
+<script src="../../JAVASCRIPT/Algemeen/Mail.js"></script>
+</body>
+</html>

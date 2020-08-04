@@ -1,0 +1,125 @@
+#bevestiging-bestelling {
+    font-size: 20px;
+    color: red;
+}
+
+main {
+    display: block;
+    margin-bottom: 50px;
+}
+
+h1, p, hr {
+    margin: 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+#adresgegevens {
+    grid-column: 1;
+}
+
+#bezorgopties {
+    grid-column: 2;
+}
+
+#bezorgopties div {
+    padding-left: 25px;
+}
+
+#controle-bestelling {
+    grid-column: 3;
+}
+
+#gebruikerinfo {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 5px;
+}
+
+input {
+    box-sizing: border-box;
+}
+
+.kol1 {
+    grid-column: 1;
+}
+
+.kol2 {
+    grid-column: 2;
+}
+
+.kol3 {
+     grid-column: 3;
+}
+
+.span2 {
+    grid-column: span 2;
+}
+
+.red {
+    color: red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+input[type=radio] {
+    margin: 10px 0;
+}
+
+#winkelmandje article, #winkelmandje div {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+#knoppen {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+main input, main select {
+    font: 20px "Baskerville Old Face", sans-serif;
+    border-radius: 4px;
+}
+
+label {
+    font: 20px "Baskerville Old Face", sans-serif;
+}
+
+main p {
+    font-size: 20px;
+}
+
+hr {
+    grid-column: span 3;
+}
+
+#winkelmandje {
+    text-align: center;
+}
+
+#bestellen, #annuleren {
+    grid-column: 1;
+}
+
+@media screen and (min-width: 401px) {
+    #winkelmandje {
+        text-align: left;
+    }
+    #knoppen {
+        grid-template-columns: repeat(2, 50%);
+    }
+    #annuleren {
+        grid-column: 2;
+    }
+}
+
+@media screen and (min-width: 1151px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
+    }
+}
